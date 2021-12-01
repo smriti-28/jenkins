@@ -1,1 +1,0 @@
-echo "jenkins is working"
