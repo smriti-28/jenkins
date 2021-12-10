@@ -8,5 +8,5 @@ WORKDIR /var/www/html/
 RUN unzip summer.zip
 RUN cp -rp summer/* /var/www/html/
 RUN rm -rf  summer.zip summer
-CMD["usr/sbin/httpd", "-D", "FOREGROUND"]
+CMD ["usr/sbin/httpd","-D","FOREGROUND"]
 EXPOSE 80
