@@ -1,7 +1,7 @@
 FROM centos:latest
 MAINTAINER smritisarthak.28@gmail.com
 RUN yum install httpd -y
-RUN yum install unzip
+RUN yum install unzip -y
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page273/summer.zip /var/www/html
 WORKDIR /var/www/html/
 RUN unzip summer.zip
