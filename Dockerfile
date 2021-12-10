@@ -1,6 +1,6 @@
 FROM centos:latest
 MAINTAINER smritisarthak.28@gmail.com
-RUN yum install https \
+RUN yum install httpd \
 zip \
 unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page273/summer.zip /var/www/html
