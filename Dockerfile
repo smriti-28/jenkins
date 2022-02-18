@@ -1,5 +1,5 @@
 FROM centos:latest
-RUN yum install httpd
+RUN yum install httpd -y
 WORKDIR /var/www/html/
 RUN echo 1 >> /var/www/html/index.html
 CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
